@@ -75,6 +75,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>web111</finalName>
+		<finalName>webMaster</finalName>
 	</build>
 </project>
