@@ -1,0 +1,97 @@
+/* CSS Document */
+/*登录*/
+.login{ padding:10px;}
+.text{width:97%;  height:40px; padding-left:5px; border:1px solid #ddd; border-radius:5px; box-shadow:0px 0px 5px 0px #ddd;}/*文本框默认样式  */
+.loginText{ margin-top:10px; margin-bottom:15px;}
+.userName{ background:url(../../image/user1.html) no-repeat center left 10px; padding-left:50px;}
+.password{ background:url(../../image/password.html) no-repeat center left 11px; padding-left:50px;}
+.loginDl{ margin-top: 30px;}
+.loginDl dd{ display:inline-block; width:32%; text-align:center; }
+.loginBtn a{ display:block;margin: 0px auto; width:70px; height:35px; line-height:35px; background:#58C9F3; border-radius:3px; text-align:center; color:#fff;}
+.Forgetp_pas a{ color:#58C9F3; display:block; height:35px; line-height:35px;}
+
+/*登录 注册 */
+.number{ background:url(../../image/sjh.html) no-repeat center left 10px; padding-left:50px;}
+@media screen and (max-width: 980px) {
+	.text{ width:93%; height:40px; padding-left:5px; border:1px solid #ddd; border-radius:5px; box-shadow:0px 0px 5px 0px #ddd;}
+	.userName{ background:url(../../image/user1.html) no-repeat center left 10px; padding-left:50px;}
+	.password{ background:url(../../image/password.html) no-repeat center left 11px; padding-left:50px;}
+	.number{ background:url(../../image/sjh.html) no-repeat center left 10px; padding-left:50px;}
+}
+@media screen and (max-width: 700px) {
+	.text{ width:89%; height:40px; padding-left:5px; border:1px solid #ddd; border-radius:5px; box-shadow:0px 0px 5px 0px #ddd;}
+	.userName{ background:url(../../image/user1.html) no-repeat center left 10px; padding-left:50px;}
+	.password{ background:url(../../image/password.html) no-repeat center left 11px; padding-left:50px;}
+	.number{ background:url(../../image/sjh.html) no-repeat center left 10px; padding-left:50px;}
+}
+@media screen and (max-width: 480px) {
+	.text{ width:85%; height:40px; padding-left:5px; border:1px solid #ddd; border-radius:5px; box-shadow:0px 0px 5px 0px #ddd;}
+	.userName{ background:url(../../image/user1.html) no-repeat center left 10px; padding-left:50px;}
+	.password{ background:url(../../image/password.html) no-repeat center left 11px; padding-left:50px;}
+	.number{ background:url(../../image/sjh.html) no-repeat center left 10px; padding-left:50px;}
+}
+
+.verification{ width:40%; border: 1px solid #ddd; height: 45px; border-radius:3px; padding-left: 5px;box-shadow:0px 0px 5px 0px #ddd;}
+.verificationBtn{ height: 45px; width:30%; -webkit-appearance: none; border: 0px; background: #f0f0f0; margin-left: 10px;}
+
+
+/* 购物车 */
+.shoppingCart{ background: #F6F5FB; padding-bottom: 5px; margin-bottom:100px;}
+@media screen and (max-width: 980px) {
+	.shoppingCart{ background: #F6F5FB; padding-bottom: 5px; margin-bottom:30px;}
+}
+@media screen and (max-width: 700px) {
+	.shoppingCart{ background: #F6F5FB; padding-bottom: 5px; margin-bottom:30px;}
+}
+@media screen and (max-width: 480px) {
+	.shoppingCart{ background: #F6F5FB; padding-bottom: 5px; margin-bottom:100px;}
+}
+.borImg{  width: 122px; height: 122px; text-align:center;  background:url(../../image/radion_bg_p.html) no-repeat;}
+.borImg img{width: 60%; height:60%; margin-top: 20px; text-align: center;}
+.gwcSl{ width: 60px; height: 25px; line-height: 25px; border: 1px solid #ddd; text-align: center;}
+.shoppingCartTab{ width: 100%;}
+.shoppingCartdl dd{ margin-top: 10px; margin-bottom: 10px; line-height: 22px;}
+.shoppingCartdl{margin-left: 5px; margin-right: 5px;}
+.Zprice{ font-size: 20px;}
+.Zprice span{ color: #f00;}
+.shoppingCart1 li{ background: #fff; padding-bottom: 10px; margin-bottom: 15px; border-bottom: 1px solid #ddd;}
+.ClearingZj{ margin-top:10px;  background:#F3A527; color:#fff; width: 10%; text-align: center; height: 40px; line-height: 40px; border-radius:5px;  font-size: 18px;}
+.del img{width: 40%; height: 40%; margin-top:20px;}
+@media screen and (max-width: 980px) {
+	.ClearingZj{ margin-top:10px; background:#F3A527; color:#fff; width: 40%; text-align: center; border-radius:5px; font-size: 18px;}
+}
+@media screen and (max-width: 700px) {
+	.ClearingZj{  margin-top:10px; background:#F3A527; color:#fff; width: 40%; text-align: center; border-radius:5px; font-size: 18px;}
+}
+@media screen and (max-width: 480px) {
+	.ClearingZj{ margin-top:10px; background:#F3A527; color:#fff; width: 40%; text-align: center; border-radius:5px; font-size: 18px;}
+}
+.Clearing{ background: #fff; box-shadow:0px 0px 5px #999; position: fixed; bottom: 0px;  width: 100%;}
+.Clearing1{ padding: 10px;}
+
+/*author liuxinyun*/
+.logo_box{/* margin:40px auto; */text-align:center;}
+.login{text-align:center;}
+.login p .userumber,.login p .userpassword{
+	width:90%;
+	margin:20px auto 0;
+	height:40px;
+	padding-left:5px;	
+}
+.login .tips_box{text-align:right;margin-top:0px;width:90%;margin:5px auto;}
+.login .tips_box a{color:#b4b4b4;}
+
+.immediate_login{height:40px;width:60%;text-align:center;background:#82b43b;line-height:40px;margin:20px auto 0;
+cursor:pointer;-webkit-border-radius:6px;-ms-border-radius:6px;-o-border-radius:6px;-moz-border-radius:6px;border-radius:6px; display: block; color: #fff;}
+.immediate_login a{color:#fff;}
+
+.wap_top{ width: 100%; background:#3ca2c6;height:60px;line-height:60px; text-align:center; font-weight:500;font-size:22px; margin-bottom: 40px; color: #fff;}
+
+.wap_prompt{height: 3px; margin-top:30px; margin-bottom:30px;  width:150px; margin-left:85px; color: red;}
+@media screen and (max-width: 480px) {
+	.wap_prompt{height: 3px; margin-top:30px; margin-bottom:10px;  width:150px; margin-left:8px; color: red;}
+	.logo_box img{text-align:center; width: 80%;}
+}
+
+
+

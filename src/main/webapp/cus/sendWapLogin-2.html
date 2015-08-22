@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.duoyoumi.com/cus/sendWapLogin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 08:06:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0;/">
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="../dum/css/common/common.html"/>
+<link rel="stylesheet" type="text/css" href="../css/login/usercenter.css"/>
+<style type="text/css">
+.fl{ float: left;}
+.cb{ clear: both;}
+</style>
+
+<script type="text/javascript" src="../js/common/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<script type="text/javascript">
+/**
+* 立即登陆
+*/
+function login(callback){
+	$(".promptColor span").html("");
+	dum.common.ajax({
+		   type: "post",
+		   url: "/cus/login.do",
+		   data:  $('#loginForm').serialize(),
+		   dataType : "json",
+		   success: function(data)
+		   {
+			   if (data.returnstatus=="0") 
+			   {
+				   if(callback) {
+					   callback();
+				   } else if(data.orderCode && "" != data.orderCode) {
+					   $('#loginForm').addInput({name:"orderCode"}).val(data.orderCode);
+					   $('#loginForm').attr("action", dum.appName + "/payment/paymentConfirm.html");
+					   $('#loginForm').attr("method", "post");
+					   $('#loginForm').submit();
+				   } else {
+					   window.location=dum.appName+ "/messCenter/index.html";   
+				   }
+			   }else{
+				   	 $(".error_"+data.filed).html(data.error);
+			   }
+		   }
+		});
+}
+
+</script>
+</head>
+<body>
+<input type="hidden" value="" id="home_app_Name"/>
+<!--头部-->
+<div class="wap_top">
+	登录易财中国
+</div>
+<!--登录-->
+<div class="logo_box">
+	<img src="../common/images/login_logo.png" alt="易财中国" />
+</div>
+<div class="login">
+	<form id="loginForm"  method="post">
+		<p style="height: 3px;margin: 30px auto;width: 450px;color: red;"><span id="text_validate2"></span><b></b></p>
+	    <p><input type="text" class="userumber" placeholder="填写手机号码" name="customer.customerMobile"></p>
+	    <p class="promptColor phoneNumber">
+			<span class="error_customerMobile"></span>
+		</p>
+	    <p><input type="password" class="userpassword" placeholder="请输入密码"  name="cusLoginPwd.customerPwd"></p>
+	    <p class="promptColor phoneNumber">
+			<span class="error_customerPwd"></span>
+		</p>
+	    <div claass="cb"></div><br/>
+	    <div class="tips_box">
+	    	<!-- <a href="">忘记密码？</a> -->
+	    	<a href="sendWapRegister.html">免费注册</a>
+	    </div>
+	    <div >
+	    	<a href="javascript:void" class="immediate_login" onclick="login('');" id="btn_login"  >立即登录</a>
+	    </div>
+    </form>
+</div>
+</body>
+
+<!-- Mirrored from www.duoyoumi.com/cus/sendWapLogin.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 08:06:03 GMT -->
+</html>

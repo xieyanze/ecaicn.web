@@ -1,0 +1,617 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.duoyoumi.com/newsList/CKXT.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 07:59:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+	 	创客学堂
+</title>
+<link type="image/x-icon" href="../image/logo_icoi.ico" rel="shortcut icon" />
+<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/service/service.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/service/service.css"/>
+<link rel="stylesheet" type="text/css" href="../css/stylea.css"  />
+<link rel="stylesheet" href="../css/login/login_base.css" media="all" >
+<link rel="stylesheet" href="../css/common/client_base.css" media="all" >
+
+<script language=javascript src="../js/jquery/jquery-1.9.1.js"></script>
+<script language=javascript src="../js/jquery/jquery.easing.1.3.js"></script>
+<script language=javascript src="../js/jquery/jquery.validate.js"></script>
+<script language=javascript src="../js/jquery/dum.validate.js"></script>
+
+<script language=javascript src="../js/mobile.js"></script>
+<script language=javascript src="../js/scroll.js"></script>
+
+
+<script language=javascript src="../js/common/webuploader.nolog.js"></script>
+
+<script language=javascript src="../js/ainatec.js"></script>
+
+<script language=javascript src="../js/common/common.js"></script>
+<script language=javascript src="../js/common/upload.js"></script>
+<script language=javascript src="../js/common/home.js"></script>
+
+<script language=javascript src="../js/index.js"></script>
+
+<!-- <script language=javascript src="/js/services/register.js"></script> -->
+<script type="text/javascript" src="../js/datePicker/WdatePicker.js"></script>
+<script type="text/javascript">
+	var showDia = function(id) {
+		window.open("/hotInformation/"+id+".html");
+	}
+	
+	var showPage = function(pageNo) {
+		$("dl.listPage").find("dd[pageNo]").removeClass("listHover");
+		$("dl.listPage").find("dd[pageNo='"+pageNo+"']").addClass("listHover");
+		if(pageNo != Number("1")) {
+			window.location.href = window.location.href.split("?")[0] + "?pageNo="+pageNo;
+		}
+	}
+	
+	var showMoble = function(mobleIndex) {
+		var toPage = Number("1") + Number(mobleIndex);
+		if(toPage > 0 && toPage <= "7") {
+			showPage(toPage);
+		}
+	}
+	
+	$(function() {
+		var dds = $("dl.listPage").find("dd[pageNo]");
+		dds.click(function() {
+			if(!$(this).hasClass("listHover")) {
+				showPage($(this).attr("pageNo"));
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<input type="hidden" value="" id="home_app_Name"/>
+<div id="loginRegisterDiv"></div>
+<div class="index" id="index">
+ <div class="headbg1">
+ 	<div class="enrol">
+ 		<div class="w_1200">
+ 			<p class="fl welcome" style="color: #fff;"><a href="javascript:void(0);">欢迎您来到多有米财税平台！</a></p>
+ 			<dl class="pageTop">
+ 				<dd>
+ 					<p class="shopping_cart">
+	 					<a href="../service/shoppingCart.html" title="购物车" style="display: block;">
+	 						<b></b>购物车 
+	 						<strong style=" color: #FFE400;">&nbsp; 
+		 							 
+	 						</strong>
+	 					</a>
+ 					</p>
+ 				</dd>	
+ 				<dd>
+ 					<ul class="login_register">
+	 						<li><a href="../cus/loginjump.html">登录</a></li>
+							<li>|</li>
+							<li><a href="../cus/registerjump.html">注册</a></li>
+					</ul>
+				</dd>
+				<dd>	
+					<a href="http://server.duoyoumi.com/login/login.html" class="myOrder" target="_blank">加盟我们</a>
+				</dd>
+				<dd>	
+					<div class="gzDym">
+						<p class="gzDym1">
+							关注多有米
+							<span class="gzHover1"><img src="../image/index/gz.png" width="14" height="7" /></span>
+							<span class="gzHover2" style="display: none;"><img src="../image/index/gzHover.png" width="14" height="7" /></span>
+						</p>
+						<p class="gzHover" style="display: none;">
+							<img src="../image/index/dymErwm.png" width="80" height="80" />
+						</p>
+					</div>
+				</dd>
+ 				<div class="cb"></div>
+ 			</dl>
+ 			<div class="cb"></div>
+ 		</div>
+ 	</div>
+ 	<div class="headbg">
+ 		<div class="w_1200">
+ 			<div class="logoDiv fl" style="margin-left: -15px;">
+		    	<h3 class="logo" id="h3_logo" >
+					 <a href="../index.html"><img src="../image/index/logog.png"  border="0" alt="多有米logo" title="多有米" /></a>
+				</h3>
+	    	</div>
+	    	 <div class="nav1">
+	               <ul>		  
+					 <li><a href="../index.html" title="首页">首页</a></li>
+					 <li class="qhzq"><a href="../service/registerWelfare.html" title="注册公司">注册公司<b></b></a></li>
+					 <li class="dszq"><a href="../service/accounting.html" title="代理记账">代理记账</a><b></b></li>
+					 <li location="services"><a href="../index.html#services" title="我们的服务">服务</a></li>
+					 <li><a href="ZXZX.html"  target="_blank" title="最新资讯">最新资讯</a></li>
+					 <li><a href="CKXT.html"  target="_blank" title="创客学堂">创客学堂</a></li>
+					 <li><a href="../top/registerZt.html" target="_blank" title="优势对比">优势对比</a></li>
+					 <li style="margin-right: 20px;"><a href="../about/showabout.html" title="关于我们">关于我们</a></li>
+				 </ul>
+	         </div> 
+	    	<div class="cb"></div>
+ 		</div>
+ 	</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$("li",$("ul",$("div.nav1"))).click(function() {
+			if($(this).attr("location")) {
+				/* window.location.href = dum.appName + "/home/index#" + $(this).attr("location"); */
+				var b = 80;
+				var c = $("#" + $(this).attr("location")).offset().top - b;
+				$("html,body").stop().animate({
+					scrollTop : c
+				}, 1000, "easeInOutQuint");
+			}
+		});
+
+		$("li",$("ul.login_register")).click(function() {
+			var location = $(this).attr("location");
+			if(location === "login") {
+				dum.login.showlogin();
+			} else if(location === "register") {
+				dum.login.register();
+			} else if(location === "userUI") {
+				//dum.forword("/mainInfo/wdfw.do");
+				dum.forword("/mainInfo/wddd.do");
+			} else if(location === "outLogin") {
+				dum.forword("/user/loginOut.do");
+			}
+		});
+		
+		var shopping = $("p.shopping_cart").find("a");
+		
+// 		// 设置购物车
+// 		dum.common.get("/serviceIndex/getSessionServices.do", {}, 
+// 				function(data) {
+			
+// 			shopping.click(function() {
+// 				if(!data && data.length <= 0) return;
+// 				dum.forword("/jsp/services/reservServices.jsp");
+// 			});
+			
+// 			var count = (data && data.length > 0) ? data.length : 0;
+// 			$(shopping).find("strong").html("&nbsp;" + count);
+// 		});
+	})
+	
+	function getContextPath() {
+		var contextPath = document.location.pathname;
+		var index = contextPath.substr(1).indexOf("../index.html");
+		contextPath = contextPath.substr(0, index + 1);
+		delete index;
+		return contextPath;
+	}
+	
+	function homeClick() {
+		window.location.href = window.location.protocol + "//" + window.location.host + "/" + getContextPath();
+	}
+
+ $(document).ready(function() {
+		  $(".gzDym").mouseover(function(){
+			  $(".gzDym1").css({ color:"#000", padding:" 0px 0px 0px 3px"});
+			  $(".gzHover").show();
+			  $(".gzHover1").hide().siblings(".gzHover2").show();
+		  });
+		  
+		  $(".gzDym").mouseout(function(){
+			  $(".gzHover").hide();
+			  $(".gzDym1").css({ color:"#fff", padding:" 0px"});
+			  $(".gzHover2").hide().siblings(".gzHover1").show();
+		  }); 
+   });	 
+</script>
+<script charset="utf-8" src="../js/wpa.html"></script>
+<div class="side">
+	<ul>
+		 <li class="call_li"><a href="javascript:void(0);"  onclick="callGril();"><div class="sidebox"><img src="../image/niu_ico.png">呼叫客服</div></a></li>
+	  	 <li>
+	  	 	<a id="qq-service" class="iblock icon color-blue font22 qq-service" title="在线客服" href="javascript:;" rel="external nofollow" data-icon="qq" >
+	  	 		<div class="sidebox"><img src="../image/side_icon04.png">免费咨询</div>
+	  	 	</a>
+	  	 </li>
+		 <li style="border:none;"><a href="javascript:void(0);" onclick="$('#back_none').toggle();" class="sidetop"><img src="../image/side_icon05.png"></a></li>
+		 <li  id="back_none"  style="height: 80px; display: none;">
+			  	 <div class="sidetop"  id="back_none_d"  style="height: 80px; " >
+			  	 	<div class="bshare-custom">
+			  	 		<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+			  	 		<a title="分享到微信" class="bshare-weixin"></a>
+			  	 		<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+			  	 		<a title="分享到人人网" class="bshare-renren"></a>
+			  	 		<a title="分享到网易微博" class="bshare-neteasemb"></a>
+			  	 		<a title="分享到QQ空间" class="bshare-qzone"></a>
+			  	 	</div>
+			  	 	<script type="text/javascript" charset="utf-8" src="../../static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+			  	 	<script type="text/javascript" charset="utf-8" src="../../static.bshare.cn/b/bshareC0.js"></script>
+			  	 </div>
+		  </li>
+		   <li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="../image/side_icon06.png"></a></li>	
+  </ul>
+</div>
+<!-- 呼叫客服 -->
+<div class="Call_kf_close" style="display: none;">
+	<div class="theme-popover-mask"></div>
+		<div class="Call_kf">
+			<div class="Call_kf_h3">
+				<h3 class=" fl"><b></b>呼叫客服</h3>
+				<p class="fr close" onclick="$('.Call_kf_close').hide()">×</p>
+				<div class="cb"></div>
+			</div>	
+	    <form class="call_form" method="post" id="call_form">
+	        	<p class="call_from_name"><span>您的姓名：<input type="text" name="customerName" class="text_name required" placeholder="请输入您的姓名" /></span></p>
+	            <p class="call_from_name"><span>手机号码：<input type="text" name="customerMobile" class="text_name required isMobile" placeholder="填写手机号码" /></span></p>
+	            <p class="btn_p">
+	            	<input  class="btn_1" type="button" id="atOnceCall" onclick="TatOnceCall();" value="立即拨打" name="btn_bd" />
+	            </p>
+	    </form>   
+	</div>
+</div>
+
+<script type="text/javascript">
+
+//qq service
+$(function() {
+	if(BizQQWPA) {
+		BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4006980100, selector: 'qq-service'});
+		BizQQWPA.addCustom({aty: '0', a: '0', nameAccount: 4006980100, selector: 'qq-service2'});
+	}
+});
+
+/* 呼叫客服 */
+function callGril(){
+	var url ='/operation/callServiceUI.do';
+	dum.common.ajax({
+        type: "post",
+        url: url,
+        dataType: "json",
+        success: function(data){
+        	if(data==0){
+        		$(".Call_kf_close").show();
+        	}else if(data==1){
+        		TatOnCallGirl();
+        	}
+        }
+    });
+}
+
+//立即拨打  (已登陆)
+function TatOnCallGirl(){
+	var url ='/operation/atOnceCallGirl.do';
+	dum.common.ajax({
+        type: "post",
+        url: url,
+        dataType: "json",
+        success: function(data){
+        	if(data==1){
+	        	alert("呼叫成功，稍后我们的客服会与你联系！");
+        	}
+        }
+    });
+}
+//立即拨打  (未登陆)
+function TatOnceCall(){
+	if($("#call_form").valid()){
+		var url ='/operation/atOnceCall.do';
+		dum.common.ajax({
+	        type: "post",
+	        url: url,
+	        dataType: "json",
+	        data:$("#call_form").serialize(),
+	        success: function(data){
+	        	if(data==1){
+	        		$('.Call_kf_close').hide();
+		        	alert("呼叫成功，稍后我们的客服会与你联系！");
+	        	}
+	        }
+	    });
+	}
+	return false;
+}
+
+//侧边//
+$(function(){
+	$(".side ul li").hover(function(){
+		$(this).find(".sidebox").stop().animate({"width":"124px"},50).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})	
+	},function(){
+		$(this).find(".sidebox").stop().animate({"width":"54px"},50).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#000"})	
+	});
+	
+});
+//回到顶部函数
+function goTop(){
+	$('html,body').animate({'scrollTop':0},300);
+}
+
+$(document).ready(function() {
+	
+	$("input[name='followupDateStr']").click(function() {
+		WdatePicker({skin:'whyGreen',dateFmt:'yyyy-MM-dd HH:mm', onpicked: function(data) {
+			$("input[name='followupDateStr']").val(data.cal.getDateStr());
+		}});
+	});
+});
+</script><input type="hidden" id="home_app_Name" value=""/>
+<div class="nav_top" style=" background: #fff;">
+</div>
+<div  id="home_centext" style="min-height: 500px;">
+<div class="newsList" style="margin-top: 115px; margin-bottom: 10px;">
+	<div class="w_1200 newsList1">
+		<ul class="newslistUl">
+				<li>
+					<p class="newsImg fl"><img src="../file/imgdbc3.html?id=196" onclick="showDia(155);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(155);">创业者必读：身为试衣间要读懂试衣人的心</h4>
+						<p class="newsConet">
+							成功创业的核心是什么?投资人最关心什么?什么样的CEO才是称职的?什么样的商业计划书才能吸引投资人?作为创业者，您必须读懂投资人的思维逻辑，否则一切免谈。 一、什么是真正的创业 创业是指团队源于自己的信念、兴趣和理想，发现、识别、把握具有商业价值的机会和需求，整合已有或通过商业规则能够拥有的资源，采用创新的解决办法或可行的商业模式，坚持和高效的执行，获得利益、实现价值的过程。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Fri Jul 17 11:42:06 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imgd17a.html?id=188" onclick="showDia(151);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(151);">为激励员工创新 这些科技公司也是拼了</h4>
+						<p class="newsConet">
+							在竞争日趋激烈的科技圈，创新无疑成了各企业不断发展的根本动力。囊中羞涩的索尼甚至要建众筹网站，为员工的新点子筹钱。快穷哭的索尼都在拼了命的创新，其他财大气粗的科技公司们自然对激励员工创新不会手软。 【日渐西山的索尼：筹钱也要创新】由于长期亏损，索尼资金十分紧张，科技创新研发的投入也相对不足，进而引发了内部一些工程师的不满。为此，索尼建设了名为“首飞”的众筹网站，为索尼员工的创新项目提供融资支持，希望通过创新摆脱颓势，除此之外，索尼还将此网站作为销售员工创新产品的网络商店。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Wed Jul 15 16:49:11 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imge3cf.html?id=171" onclick="showDia(139);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(139);">俞敏洪：创业像泡妞，不到手不罢休</h4>
+						<p class="newsConet">
+							近日，俞敏洪在“创业天府·菁蓉汇”举办的活动上发表了关于创业和投资的演讲。以下为演讲全文： 　    相信这个特别伟大的时代 　　首先，毫无疑问我们生在一个特别伟大的时代。就我本人而言，我已经……就算现在离开这个世界都已经很合算了。 　　原因很简单，我出生在文化大革命时期，那是一个封闭的时代，紧接着是改革开放，最重要的阶段是从92年开始中国创业大潮所引起的时代，一直到现在中国融入整个世界。 　　不管发生的事情我们满意或者不满意，但有一点可以肯定，这个时代一直在进步，我们的国家经历了从封闭到开放、从贫困到繁荣、从自以为是到融入世界的过程。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Thu Jul 09 17:53:06 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imgd729.html?id=164" onclick="showDia(132);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(132);">创业者：你是马、马夫、还是主人？</h4>
+						<p class="newsConet">
+							真的创业者，不满足成为马，要成为马夫。顺势，是马。造势，是马夫。造出一个市场，造出一片荒野，平地起风云。谁是马夫，我猜想，可能是发明电的那个人，发 明互联网的那群人，第一个站出来说地球在围绕太阳转的那个人，治愈癌症的那个人，把人类送上火星定居的那群人，挥动双臂就能煽起一场台风的人。而不是想借 着台风飞上天的猪。他们是从无到有的开创，而不是竞争。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Tue Jul 07 15:43:49 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/img5c8d.html?id=149" onclick="showDia(121);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(121);">马云创业过程中的十次失败，你可能也会遇到</h4>
+						<p class="newsConet">
+							马云：屌丝们的励志霸主   马云，男，1964年10月15日出生于浙江省杭州市，中国著名企业家，阿里巴巴集团，淘宝网、支付宝创始人。  马云不是完人，也犯过许多错误，其中一些是致命的。2013年的一次颁奖典礼上，马云说，如果将来要写书，就写《阿里的1001个错误》。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Wed Jul 01 14:51:56 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/img8280.html?id=248" onclick="showDia(202);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(202);">想体验创业的三种选择</h4>
+						<p class="newsConet">
+							创业很火，每个人都想跳进去试试。其实，很多人并没有成型的想法可以发起一个项目，也没有足够的把握自己组一个团队，而是想体验一下那种 闹哄哄的感觉、激情燃烧的岁月，特别是很多在大公司待久了觉得无聊的人。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Fri Aug 07 17:03:20 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imgace9.html?id=245" onclick="showDia(199);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(199);">创业的十个小窍门</h4>
+						<p class="newsConet">
+							从当今社会经济发展特点来看，人们的工作基本上可以如下三种类型：国家公务员、企业雇工人员、自己做老板。他们各有千秋；但是恐怕很多人都想自己做老板！但是谁都知道，老板有老板的难处，并非人人都能做老板，真正做一个赚钱的老板、做一个事业有成的老板是需要勤奋和智慧的。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Thu Aug 06 17:16:19 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/img5ff0.html?id=242" onclick="showDia(196);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(196);">九种创业技巧</h4>
+						<p class="newsConet">
+							创业的方法容易学会，但学精的话则需要花功夫。如果你想创业，信息搜集越多，成功的几率越大。既然信息量如此重要，那么了解创业的最佳方法还是很有必要的。很多人想创业，但不了解成功的经商之道，那么很难取得成就。许多创业点子被放弃，原因在于人们不知道从何开始。而有人壮志凌云，却缺乏商业头脑。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Wed Aug 05 14:56:14 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imga3ed.html?id=239" onclick="showDia(193);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(193);">创业者应具备的五大基本素质</h4>
+						<p class="newsConet">
+							无论你是选择创业还是就业，都需要具备一定的素质。对于创业者来说，这更是尤为重要的一点。有人对于创业用一句话做了概括：创业是一条伟大的艰辛路，很美……因此创业是很艰辛的，但是经历过后又是很美丽的。那么创业者们如何才能创业成功，把想法传达给公众呢？以下介绍了创业者们应具备的五大素质，希望对创业者们有所帮助。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Tue Aug 04 16:55:34 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+				<li>
+					<p class="newsImg fl"><img src="../file/imged7c.html?id=236" onclick="showDia(190);"/></p>
+					<div class="fl newslisD">
+						<h4 onclick="showDia(190);">创业者必须具备的心态</h4>
+						<p class="newsConet">
+							你的心有多宽，你的世界就有多大。心态是决定一个人成败的决定性因素，对于诸多的互联网创业者尤其如此。好的心态不单是事业起飞的保证，更是人生境界提升的重要基础。就我本身的创业经历来说，我觉得创业者必须具备如下十二大心态。
+						</p>
+						<p class="newsTime">
+							<fmt:formatDate value="Mon Aug 03 17:36:19 CST 2015" pattern="yyyy-MM-dd"/>
+						</p>
+					</div>
+				</li>
+		</ul>
+		<!-- 分页 -->
+		
+		<dl class="listPage">
+			<dd onclick="showPage(1);">首页</dd>
+			<dd onclick="showMoble(-1);"><</dd>
+					<dd class="listHover" pageNo="1">1</dd>
+					<dd pageNo="2">2</dd>
+					<dd pageNo="3">3</dd>
+					<dd pageNo="4">4</dd>
+					<dd pageNo="5">5</dd>
+					<dd pageNo="6">6</dd>
+					<dd pageNo="7">7</dd>
+			<dd onclick="showMoble(1);">></dd>
+			<dd onclick="showPage(7);">尾页</dd>
+			<dd>当前第<span>1</span>/<span>7</span>页</dd>
+		</dl>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(function(page) {
+		var list = $("div.footbg").find("div.foot_bout").find("li").find("a");
+		$.each(list, function() {
+			$(this).click(function() {
+				if($(this).parent().attr("url")) {
+					dum.forword($(this).parent().attr("url"));	
+				}
+			});
+		});		
+	});
+	function updateClickCount(id){
+		dum.common.ajax({
+	        type: "post",
+	        url: "/friendshipLink/updateClickCount.do",
+	        dataType: "json",
+	        data:{'id':id},
+	        success: function(data){ }
+	    });	
+	}
+	$(document).ready(function(){
+		  $(".foot_ul_wxgzh").mouseover(function(){
+		  $(".foot_ul_wxgzh_ewm").show();
+		  });
+	});
+	$(document).ready(function(){
+		  $(".foot_ul_wxgzh").mouseout(function(){
+		  $(".foot_ul_wxgzh_ewm").hide();
+		  });
+	});
+	$(document).ready(function(){
+		  $(".foot_az").mouseover(function(){
+		  $(".foot_ul_az_ewm").show();
+		  });
+	});
+	$(document).ready(function(){
+		  $(".foot_az").mouseout(function(){
+		  $(".foot_ul_az_ewm").hide();
+		  });
+	});
+</script>
+<div class="footbg">
+    <div class="foot">
+            
+            <div class="foot_bout">
+            	<div class="foot_ul_wxgzh_ewm ewm"><img src="../image/index/erweima_pic1.png" width="170" height="170" alt="多有米服务号"> </div>
+            	<div class="foot_ul_az_ewm ewm"><img src="../image/index/erweima_pic.png" width="129" height="129" alt="多有米服务号"> </div>	
+            	<div style="margin-bottom: 10px;">
+		            <p class="fr">客服热线：(服务时间：9:00-21:00)</p>
+		        	<ul class="fl">
+		        		<li class="wzdt"><a href="../foots/siteMap.html" target="_blank">网站地图</a></li>
+		            	<li><a href="../foots/contract_terms.html" target="_blank">合同条款</a></li>
+		                <li><a href="../foots/issue.html" target="_blank">常见问题</a></li>
+		                <li><a href="../foots/join_us.html" target="_blank">加入我们</a></li>
+		                <li><a href="../foots/paid_help.html" target="_blank">支付帮助</a></li>
+		                <!--  url="/jsp/common/media_reports.jsp" --><!-- <li><a href="javascript:void(0);">媒体报道</a></li> -->
+		               <!-- <li><a href="javascript:void(0);" onclick="dum.forword('/home/index.do#hotNews');">行业资讯</a></li> -->
+		               <!--  <li><a href="javascript:void(0);">合作机构</a></li> -->
+		                <li><a href="../about/showabout183d.html?name=LXWM" target="_blank">联系我们</a></li>
+		                <p class="cb"></p>
+		            </ul>
+	          	 	<div class="cb"></div>
+          	 </div>
+          	 <div>
+	           	<p class="fr foot_Number">400-698-0100</p>
+	           	<ul class="fl"  style=" margin-top: 10px; margin-bottom: 8px;">
+	           		<li class="wzdt"><a href="../about/showabout.html">关于我们</a></li>
+	           		<li class="weibo">
+	           			<a href="http://weibo.com/u/5541657535" target="_blank" rel="external nofollow" title="新浪微博"><b></b>微博</a>
+	           		</li>
+	           		<li class="foot_ul_wxgzh">
+	           			<a href="javascript:void(0);" style="text-decoration: none; "><b></b>微信公众号</a>
+	           		</li>
+	           		<!-- <li class="foot_az">
+	           			<a href="javascript:void(0);"><b></b>安卓版</a>
+	           		</li> -->
+	           </ul>
+	           <div class="cb"></div>
+	       </div> 
+	      <div class="foot_mt" style="margin-bottom: 10px; overflow: hidden;">    
+	           <ul class="foot_Media">
+	           		<li class="wzdt fl" style="margin-left:10px;"><a href="javascript:void(0);">媒体报道</a></li>
+	           		<li style=" margin-left: 25px;"><a href="http://www.xanews.com.cn/news/jiaodian/12129.html" rel="external nofollow" title="兴安新闻网" target="_blank"><img src="../image/index/mtbd_pic01.png" alt="兴安新闻网" title="兴安新闻网" /></a></li>
+	           		<li><a href="http://www.gs.xinhuanet.com/news/2015-03/16/c_1114656464.htm" rel="external nofollow"  target="_blank" title="新华网"><img src="../image/index/mtbd_pic02.png" alt="新华网" title="新华网" /></a></li>
+	           		<li><a href="http://hn.people.com.cn/n/2015/0316/c356343-24173313.html" rel="external nofollow"  target="_blank" title="人民网"><img src="../image/index/mtbd_pic03.png" alt="人民网" title="人民网" /></a></li>
+	           		<li><a href="http://xiaofei.china.com.cn/news/info-11-9-97335.html" rel="external nofollow"  target="_blank" title="中国网生活消费"><img src="../image/index/mtbd_pic04.png" alt="中国网生活消费" title="中国网生活消费" /></a></li>
+	           		<li><a href="http://hunan.sina.com.cn/hengyang/cj/2015-03-16/155021508.html?qq-pf-to=pcqq.c2c" rel="external nofollow" target="_blank"  title="新浪网"><img src="../image/index/mtbd_pic05.png" alt="新浪网" title="新浪网" /></a></li>
+	           		<li><a href="http://nb.ifeng.com/qyzx/detail_2015_03/16/3665654_0.shtml" rel="external nofollow"  target="_blank" title="凤凰网"><img src="../image/index/mtbd_pic06.png" alt="凤凰网" title="凤凰网" /></a></li>
+	           		<li><a href="http://life.21cn.com/zaojiao/xiaofei/a/2015/0316/14/29221643.shtml" rel="external nofollow"  target="_blank" title="21CN生活"><img src="../image/index/mtbd_pic07.png" alt="21CN生活" title="21CN生活" /></a></li>
+	          		<li><a href="http://economy.gmw.cn/2015-03/16/content_15116871.htm" rel="external nofollow"  target="_blank" title="光明网"><img src="../image/index/mtbd_pic08.png" alt="光明网" title="光明网" /></a></li>
+	          		<li style="margin-left: 95px;"><a href="http://city.chinadaily.com.cn/e/action/ShowInfo.php?classid=747&amp;id=85575" rel="external nofollow"  target="_blank"  title="CITY城市"><img src="../image/index/mtbd_pic09.png" alt="CITY城市" title="CITY城市" /></a></li>
+	          		<li><a href="http://build.workercn.cn/26673/201503/16/150316153427852.shtml" rel="external nofollow"  target="_blank"  title="中工网"><img src="../image/index/mtbd_pic10.png" alt="中工网" title="中工网" /></a></li>
+	           </ul>
+	      </div> 
+	      <div class="cb"></div>    
+          	 <p class="footLine fl">友情链接</p>
+           		<ul class=" fl foot_Link_Link" id="Links" style="width: 1100px;">
+           				<li><b></b><a onclick='updateClickCount("22");'  href='../index.html' target='_blank'>深圳代理记账</a></li>
+           				<li><b></b><a onclick='updateClickCount("19");'  href='http://www.51tm.cn/' target='_blank'>杭州商标注册</a></li>
+           				<li><b></b><a onclick='updateClickCount("9");'  href='../index.html' target='_blank'>注册深圳公司</a></li>
+           				<li><b></b><a onclick='updateClickCount("21");'  href='http://www.51flgw.com/' target='_blank'>广州律师</a></li>
+           				<li><b></b><a onclick='updateClickCount("13");'  href='http://www.yufu.sh.cn/' target='_blank'>代理公司注册</a></li>
+           				<li><b></b><a onclick='updateClickCount("23");'  href='../index.html' target='_blank'>深圳财务代理公司</a></li>
+           				<li><b></b><a onclick='updateClickCount("39");'  href='http://www.rtfcpa.com/' target='_blank'>财务外包</a></li>
+           				<li><b></b><a onclick='updateClickCount("44");'  href='http://www.hangzhoushenneng.com/　' target='_blank'>杭州代理记账</a></li>
+           				<li><b></b><a onclick='updateClickCount("27");'  href='../index.html' target='_blank'>深圳注册公司</a></li>
+           				<li><b></b><a onclick='updateClickCount("41");'  href='http://www.everachieve.com/' target='_blank'>注册香港公司</a></li>
+           				<li><b></b><a onclick='updateClickCount("43");'  href='http://www.shenghai365.com/' target='_blank'>理财产品</a></li>
+           				<li><b></b><a onclick='updateClickCount("45");'  href='http://www.smtczx.com/' target='_blank'>终端培训</a></li>
+           				<li><b></b><a onclick='updateClickCount("46");'  href='http://www.456wh.com/' target='_blank'>武汉注册公司</a></li>
+           		</ul> 
+           	<div class="cb"></div>
+           <div class="Copyright_p">
+           		<span class="fl" style="padding-left:25%;">版权所有&nbsp; 深圳多有米网络技术有限公司&nbsp;&copy;</span>
+              <a class="fl" href="http://www.miitbeian.gov.cn/" target="_blank">粤&nbsp;ICP&nbsp;备14096274号-1 </a>
+             <a href="javascript:void(0)" class="fl"><img src="../image/index/police.png"  alt="工业和信息化部"/></a>
+         	 <a href="javascript:void(0)" class="fl" style="margin-top: 20px; margin-left: 10px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254438390'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254438390%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></a>
+         	 <p class="fl" style="margin-top: 15px; margin-left: 10px;"><a href="javascript:void(0)">
+				<script type="text/javascript">
+				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F776d3a030d4a3eba7c5b8d4b58a57a08' type='text/javascript'%3E%3C/script%3E"));
+				
+				</script>
+ 			</a></p>
+         </div><!--// 【百度推广】信誉名片代码  -->
+      </div>
+</div>
+</div>
+</body>
+
+<!-- Mirrored from www.duoyoumi.com/newsList/CKXT.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 08:00:13 GMT -->
+</html>

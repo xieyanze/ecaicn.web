@@ -1,0 +1,150 @@
+/* CSS Document */
+/*我的预定*/
+.wsxx_h3{ height: 40px;  line-height: 40px; border-bottom: 1px solid #ccc; padding-left: 10px; font-size: 18px;}
+
+.my_destine{ background: #fff; padding: 0px 5px;}
+.destine{ padding:10px;}
+.destine_b_img{ width:122px; height:122px; margin:0px auto; background:url(../../image/services/Service.png) no-repeat; text-align:center; overflow:hidden;}
+.destine_b_img p{ line-height:25px;}
+.destine_img{ margin-top:30px;}
+.destine_wb{ margin:5px 0px; font-weight:bold;}
+#paying{ width:70px; height:30px; border:1px solid #238AAD; margin:10px auto; line-height:30px; background:#2FBBEC; text-align:center; border-radius:5px; color:#ABDFF5;font-size: 14px; cursor: pointer;}
+#paying1{ width:70px; height:30px; margin:10px auto; line-height:30px; border:1px solid #1F8C1F; color:#A2C794; background:#3C9100; text-align:center; border-radius:5px;  cursor: pointer;font-size: 14px;}
+.destine p{ line-height:22px;}
+
+.add_yd{ width:115px; height:115px;  border-radius:50%; background:#B4D28A; text-align:center; margin:0px 30px;}
+.add_yd p{ line-height:115px; font-size:50px; cursor:pointer; color: #fff;}
+.add_yd p:hover{ background:#82B43B; border-radius:50%;}
+
+.Clearing{ margin-top:20px;}
+.Clearing a{ display:block; border:1px solid #1f8c1f; background:#3c9100; margin-bottom:10px; padding:0px 20px; text-align:center; height:35px; line-height:35px; border-radius:5px; color:#fff;}
+.Clearing a:hover{ color:#fff;}
+
+/* new购物车 */
+.my_destine {
+	background: #fff;
+	padding: 0px 5px;
+}
+.My_Shopping_cart {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+.My_Shopping_cart h3 {
+	margin-top: 10px;
+}
+.add {
+	color: #a2c794;
+	cursor: pointer;
+	background: none repeat scroll 0 0 #3c9100;
+	border: 1px solid #1f8c1f;
+	border-radius: 5px;
+	text-align: center;
+	width: 70px;
+	padding: 8px 10px;
+	font-size: 14px;
+	margin-right: 50px;
+}
+.checkbox {
+	vertical-align: middle;
+}
+.Shopping_cart {
+	margin: 15px;
+}
+.Shopping_cart_tab {
+	width: 100%;
+}
+.Shopping_cart_tab tr td {
+	text-align: center; background: #fafafa; 
+}
+
+.Shopping_cart_tab tr th {background: #fafafa; border-bottom:8px solid #fff;
+	font-weight:normal;
+	height: 40px;
+	line-height: 40px; color:#646464; font-size: 20px;
+}
+
+.destine_img {
+	margin-top: 30px;
+}
+.paying {
+	color: #a2c794;
+	cursor: pointer;
+	background: none repeat scroll 0 0 #3c9100;
+	border: 1px solid #1f8c1f;
+	border-radius: 5px;
+	text-align: center;
+	width: 70px;
+	padding: 8px 10px;
+	font-size: 14px;
+	margin: 5px auto;
+}
+.paying:hover {
+	color: #fff;
+}
+.Cancel {
+	margin-top: 10px;
+	color: #999;
+	cursor: pointer;
+	background: none repeat scroll 0 0 #808080;
+	border-radius: 5px;
+	text-align: center;
+	width: 70px;
+	padding: 8px 10px;
+	font-size: 14px;
+	margin: 5px auto;
+}
+/* .Cancel:hover {
+	color: #fff;
+} */
+.Clearing {
+	margin-top: 20px;
+
+	padding: 5px 0px;
+}
+.Clearing_ul {
+	margin-top: 13px;
+}
+.Clearing_ul li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.del {
+	cursor: pointer;
+}
+.quantity {
+	color: #c00;
+	font-weight: bold;
+	margin: 5px;
+}
+.clearing_p {
+	color: #fff;
+	margin-right: 55px;
+	cursor: pointer;
+	background:#48b8e0;
+	margin-top:15px;
+	border-radius: 4px;
+	text-align: center;
+	line-height:40px;
+	width:110px;
+	height:40px;
+	font-size: 20px;
+}
+
+.Price {
+	color: #f00;
+}
+
+.Shopping_cart .pay_box{width:110px;height:40px;line-height:40px;background:#48b8e0;text-align:center;-moz-border-radius:4px;-ms-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;border-radius:4px;}
+.Shopping_cart .pay_box a{color:#fff; font-size: 18px;}
+.Shopping_cart .cancel{width:110px;height:40px;text-align:center;line-height:40px;}
+
+
+
+
+
+
+
+
+
+

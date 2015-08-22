@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.duoyoumi.com/cus/sendWapRegister.do by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 08:06:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0;/">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="../dum/css/common/common.html"/>
+<link rel="stylesheet" type="text/css" href="../css/login/register.css"/>
+<script type="text/javascript" src="../js/common/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/common/common.js"></script>
+<style type="text/css">
+.test_code_box .btn_test_code1 {
+    border: 0 none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 40%;
+}
+</style>
+<script type="text/javascript">
+var isCommit=true;
+//提交登录
+function getValidateCode() {
+	$(".promptColor span").html("");
+	if(isCommit){
+		// 获取验证马时需要填写手机号码
+		isCommit=false;
+		dum.common.ajax({
+			type : "post",
+			url : "/cus/getValidateCode.do",
+			data : $('#registerForm').serialize(), 
+			dataType : "json",
+			success : function(data) {
+				if (data.returnstatus=="0") {
+					tt = 60;
+					iv = setInterval("myInterval()", 1000);
+					$("#validateCode").attr("disabled", true);
+				}else{
+					$(".error_"+data.filed).html(data.error);
+					isCommit = true;
+				}
+			}
+		});
+	}
+}
+var iv;
+var tt;
+function myInterval() {
+	tt--;
+	if (tt <= 0) {
+		clearInterval(iv);
+		$("#validateCode").val('免费获取验证码');
+		$("#validateCode").removeAttr("disabled");
+		isCommit=true;
+	} else {
+		$("#validateCode").val(tt + "秒后可重新操作");
+	}
+}
+//提交注册
+function register(callback) {
+	$(".promptColor span").html("");
+    if($("#register_checkBox:checked").length > 0){
+    	// 获取验证马时需要填写手机号码
+    	dum.common.ajax({
+    		type : "post",
+    		url : "/cus/register.do",
+    		data : $('#registerForm').serialize(),
+    		dataType : "json",
+    		success : function(data) 
+    		{
+    			if (data.returnstatus=="0")
+    			{
+    				if(callback) { 
+    					callback();
+    				} else if(data.orderCode && "" != data.orderCode) {
+					   $('#loginForm').addInput({name:"orderCode"}).val(data.orderCode);
+					   $('#loginForm').attr("action", dum.appName + "/payment/paymentConfirm.html");
+					   $('#loginForm').attr("method", "post");
+					   $('#loginForm').submit();
+				   } else {
+    					window.location=dum.appName+ "/messCenter/index.html";
+    				}
+    			}else{
+    				$(".error_"+data.filed).html(data.error);
+    			}
+    		}
+    	});
+    } else {
+    	$(".error_validateLicens").show();
+    }
+}
+
+function changeImg(){
+	$("#vcodeImg").attr("src",dum.appName+"/cus/vcode.do?json=img");
+}
+function checkedLicense(){
+	if($("#register_checkBox:checked").val() == '1'){
+		$(".error_validateLicens").hide();
+	}else{
+		$(".error_validateLicens").show();
+	}
+}
+</script>
+</head>
+<body>
+<!--头部-->
+<div class="wap_top">
+	注册易财中国
+</div>
+<!--注册-->
+<div class="logo_box">
+	<img src="../common/images/login_logo.png" alt="易财中国" />
+</div>
+<div class="register_box">
+	<input type="hidden" value="" id="home_app_Name"/>
+	<form id="registerForm" >
+		<p style="height: 3px;margin: 30px auto;color: red;" align="left"><label id="registerError" style="color: red;"></label></p>
+	    <p><input type="text" class="userumber" placeholder="填写手机号码"  name="customer.customerMobile"></p>
+		<span class="error_customerMobile"></span>
+	    <p><input type="password" class="userpassword" placeholder="设置密码" name="cusLoginPwd.customerPwd"></p>
+		<span class="error_customerPwd"></span>
+	    <p><input type="text" class="username" placeholder="用户名称" name="customer.customerName" ></p>
+		<span class="error_customerName"></span>
+	    <div class="test_code_box">
+	    	<input type="text" class="test_code" name="vcode"  placeholder="请输入图形验证码" />
+			<span class="error_vcode"></span>
+	    	<p class="btn_test_code1">
+				<img alt="验证码,点击图片刷新" src=vcode1a88.do?json%22 title="点击图片更换验证码" id="vcodeImg" onclick="changeImg();" />
+			</p>
+	    	<div class="cb"></div>
+	    
+	    </div>
+	    <div class="test_code_box">
+	    	<input type="text" class="test_code"   placeholder="请输入验证码" name="validateCode">
+	    	<span class="error_validateCode"></span>
+	    	<input type="botton" value="免费获取验证码" onclick="getValidateCode();" id="validateCode"  class="btn_test_code"/>
+	    	<div class="cb"></div>
+	    </div>
+	    
+	    <div class="agree_box">
+	    	<input type="checkbox" name="checkBox" id="register_checkBox"  onclick="checkedLicense();" value="1" class="agree_checkbox"><span><span style="color:#69bfdd;">我已认真阅读并同意<a href="javascript:void(0);"  target="_blank"></label>《易财中国服务协议》</a></span></span>
+	    	<p class="error_validateLicens" style="display: none" >请同意易财中国服务协议</p>
+	    	<a href="sendWapLogin-2.html">已有帐号，立即登录</a>
+	    </div>
+	    <div align="center" style=" text-align: center;">
+	   		<input type="button" value="立即注册" name="btn_rester"   onclick="register('');"  id="btn_rester" class="btn_immediate_register"  style="background: #e7e7e7; margin-bottom: 10px;"/>
+	    </div>
+	    
+    </form>
+</div>
+</body>
+
+<!-- Mirrored from www.duoyoumi.com/cus/sendWapRegister.do by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Aug 2015 08:06:02 GMT -->
+</html>

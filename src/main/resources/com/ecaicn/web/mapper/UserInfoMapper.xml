@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ecaicn.web.mapper.UserInfoMapper">
+	<select id="query" resultType="UserInfo" parameterType="UserInfo">
+	    Select * From "userInfo"
+	</select>
+	<select id="login" resultType="UserInfo" parameterType="UserInfo">
+	    Select * From "userInfo" where "userName" = #{userName} and password=#{password}
+	</select>
+</mapper>
